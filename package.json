@@ -8,8 +8,11 @@
     "prepare": "husky install",
     "dev": "yarn tsx watch src/*",
     "start": "yarn tsx src/index.ts",
-    "lint": "yarn eslint src/**/*.ts",
-    "format": "yarn eslint src/**/*.ts --fix"
+    "lint": "yarn eslint src/**/*",
+    "format": "yarn eslint src/**/* --fix"
+  },
+  "lint-staged": {
+    "src/**/*": "eslint --fix"
   },
   "dependencies": {
     "typescript": "^5.3.3"
