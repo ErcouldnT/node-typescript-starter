@@ -4,11 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "build": "yarn tsc",
+    "prepare": "husky install",
     "dev": "yarn tsx watch src/*",
     "start": "yarn tsx src/index.ts",
     "lint": "yarn eslint src/**/*.ts",
-    "format": "yarn eslint src/**/*.ts --fix",
-    "build": "yarn tsc"
+    "format": "yarn eslint src/**/*.ts --fix"
   },
   "dependencies": {
     "typescript": "^5.3.3"
@@ -20,6 +21,8 @@
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
     "tsx": "^4.7.0"
   }
