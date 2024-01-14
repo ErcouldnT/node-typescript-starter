@@ -20,10 +20,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
-      - run: npm ci
+      - run: corepack enable
+      - run: yarn install
       # - run: ./scripts/create-test-env.sh
       # - run: cp .env.test .env
-      - run: npm run check:types
-      - run: npm run lint
+      - run: yarn check:types
+      - run: yarn lint
       # - run: npx playwright install
-      - run: npm test
+      - run: yarn test
