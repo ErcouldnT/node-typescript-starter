@@ -7,5 +7,6 @@
   "cSpell.words": ["asynciterable"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
-  }
+  },
+  "testing.automaticallyOpenPeekView": "never"
 }

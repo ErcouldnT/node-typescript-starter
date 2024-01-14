@@ -5,7 +5,7 @@
     "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
     "skipLibCheck": true,
     "sourceMap": true,
-    "rootDir": "src",
+    // "rootDir": "src",
     "outDir": "dist",
     "moduleResolution": "node",
     "removeComments": true,
@@ -26,6 +26,6 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src", "test", "vite.config.ts"],
   "exclude": ["node_modules"]
 }
