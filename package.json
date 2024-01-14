@@ -6,16 +6,15 @@
   "scripts": {
     "build": "yarn tsc",
     "prepare": "husky install",
+    "check:types": "tsc --noEmit",
     "dev": "yarn tsx watch src/*",
-    "start": "yarn tsx src/index.ts",
     "lint": "yarn eslint src/**/*",
+    "start": "yarn tsx src/index.ts",
     "format": "yarn eslint src/**/* --fix"
   },
   "lint-staged": {
-    "src/**/*": "eslint --fix"
-  },
-  "dependencies": {
-    "typescript": "^5.3.3"
+    "src/**/*": "eslint --fix",
+    "src/**/*.ts": "tsc-files --noEmit"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",
@@ -27,6 +26,8 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
-    "tsx": "^4.7.0"
+    "tsc-files": "^1.1.4",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
   }
 }
