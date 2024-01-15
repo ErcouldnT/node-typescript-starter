@@ -21,7 +21,8 @@
   },
   "lint-staged": {
     "src/**/*": "eslint --fix",
-    "src/**/*.ts": "tsc-files --noEmit"
+    "test/**/*": "eslint --fix",
+    "*.ts": "tsc-files --noEmit"
   },
   "devDependencies": {
     "@types/node": "^20.11.2",
