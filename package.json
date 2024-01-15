@@ -5,9 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsx watch src",
-    "start": "tsx src",
     "build": "tsc",
-    "preview": "tsc && node dist/src",
+    "start": "node dist/src",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
