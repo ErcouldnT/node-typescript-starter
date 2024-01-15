@@ -4,10 +4,10 @@
   "main": "index.ts",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn tsx watch src/**/*",
-    "start": "yarn tsx src/index.ts",
+    "dev": "yarn tsx watch src",
+    "start": "yarn tsx src",
     "build": "yarn tsc",
-    "preview": "yarn build && node dist/index.js",
+    "preview": "yarn build && node dist/src",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
