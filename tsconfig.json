@@ -6,7 +6,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     // "rootDir": "src",
-    "outDir": "dist",
+    "outDir": "build",
     "moduleResolution": "node",
     "removeComments": true,
     "noImplicitAny": true,
@@ -24,8 +24,8 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
-    "strict": true
+    "strict": true,
   },
-  "include": ["src", "test", "vite.config.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src"],
+  "exclude": ["node_modules", "**/*.test.ts", "**/*.spec.ts"],
 }

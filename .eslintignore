@@ -1,3 +1,4 @@
 dist
-.eslintrc.js
-.prettierrc.js
+build
+.eslintrc.json
+.prettierrc
