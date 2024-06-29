@@ -26,7 +26,7 @@
     "test": "vitest --run",
     "test:ui": "vitest --ui",
     "coverage": "vite preview --outDir ./coverage",
-    "prepare": "husky install",
+    "prepare": "husky",
     "update": "ncu -u && yarn"
   },
   "lint-staged": {
